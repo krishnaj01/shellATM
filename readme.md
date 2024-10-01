@@ -12,7 +12,7 @@ This is a basic ATM simulation program implemented using shell scripting. It all
 Contains several lines in the below format  
 *Account Name, Card Number, Email ID, Balance*  
 
-**Account Name:** It should contain First name followed by Last name (with space separated). First and Last names start with capital letters followed by any number of lower letter alphabets.  
+**Account Name:** Contains First name followed by Last name (with space separated). First and Last names start with capital letters followed by any number of lower letter alphabets.  
 
 **Card Number:** It has 16 digits in the below format <4 Digits>`<space>`<4 Digits>`<space>`<4 Digits>`<space>`<4 Digits>  
 
