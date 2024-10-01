@@ -28,16 +28,15 @@ function menu(){
 		echo "Enter the number corresponding to your choice"
 		echo "1. Withdraw cash"
 		echo "2. Deposit cash"
-		echo "3. Settings"
-		echo "4. Current Balance"
+		echo "3. Current Balance"
+		echo "4. Settings"
 		echo "5. Exit"
 		read -n 1 choice
-		
 		case $choice in
 			1) withdraw ;;
 			2) deposit ;;
-			3) settings ;;
-			4) current ;;
+			3) current ;;
+			4) settings ;;
 			5) exit 0 ;;
 			*) echo "Invalid Choice. Try Again" ;;
 		esac
@@ -95,13 +94,36 @@ function deposit(){
 
 function settings(){
 	clear
+	echo "Enter the number corresponding to your choice"
+	echo "1. Change Email Address"
+	echo "2. Change Password"
+	read -n 1 choice2
+	case $choice2 in
+		1) changeEmail ;;
+		2) changePassword ;;
+		*) echo "Invalid Choice" ;;
+	esac
+}
+
+function changePassword(){
+	clear
+	old_pass=`grep "$card_no" Credentials.txt | awk -F", " '{print $2}'`
+	echo "Enter the password: "
+	read -s new_pass
+	`sed -i "s/$card_no, $old_pass/$card_no, $new_pass/g" Credentials.txt`
+	clear
+	echo "Password changed successfully!"
+	sleep 2
+}
+
+function changeEmail(){
+	clear
 	old_email=`grep "$card_no" Account.txt | awk -F", " '{print $3}'`
 	echo "Enter the new email address: "
 	read new_email
 	if [[ $new_email =~ ^[a-zA-Z][a-zA-Z0-9]*@[a-z]+.[a-z]+.[a-z]+$ ]]
 	then
 		name=`grep "$card_no" Account.txt | awk -F", " '{print $1}'`
-		email=`grep "$card_no" Account.txt | awk -F", " '{print $3}'`
 		balance=`grep "$card_no" Account.txt | awk -F", " '{print $4}'`
 		`sed -i "s/$name, $card_no, $old_email, $balance/$name, $card_no, $new_email, $balance/g" Account.txt`
 		clear
@@ -120,7 +142,3 @@ echo "**** Press any key to continue ***"
 read -s -n 1
 seekCredentials
 menu
-
-
-
-
