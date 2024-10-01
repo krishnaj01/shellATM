@@ -14,9 +14,9 @@ Contains several lines in the below format
 
 **Account Name:** It should contain First name followed by Last name (with space separated). First and Last names start with capital letters followed by any number of lower letter alphabets.  
 
-**Card Number:** It has 16 digits in the below format <4 Digits><"space"><4 Digits><"space"><4 Digits><"space"><4 Digits>  
+**Card Number:** It has 16 digits in the below format <4 Digits><space><4 Digits><space><4 Digits><space><4 Digits>  
 
-**Email ID:** It has the format username@Domain. The username should start with an alphabet (lower/upper) followed by any number of alphabet or digits. Domain should use <"string">.<"string">.<"string">, where strings contain only lower Alphabets.  
+**Email ID:** It has the format username@Domain. The username should start with an alphabet (lower/upper) followed by any number of alphabet or digits. Domain should use <string>.<string>.<string>, where strings contain only lower Alphabets.  
 
 **Balance:** Any number >= 0.  
 
