@@ -1,0 +1,10 @@
+John Doe, 1234 5678 9012 3456, johnjacob1234@hotmail.com, 1300
+Jane Smith, 2345 6789 0123 4567, jane.smith@domain.com, 2500
+Alice Johnson, 3456 7890 1234 5678, alice.johnson@sub.domain.com, 500
+Bob Brown, 4567 8901 2345 6789, bob.brown@another.domain.com, 750
+Charlie Davis, 5678 9012 3456 7890, charlie.davis@sample.example.com, 0
+David Evans, 6789 0123 4567 8901, david.evans@website.com, 1200
+Emily Harris, 7890 1234 5678 9012, emily.harris@workplace.org, 300
+Franklin Moore, 8901 2345 6789 0123, franklin.moore@company.net, 1500
+Grace Lee, 9012 3456 7890 1234, grace.lee@service.co, 800
+Hannah White, 0123 4567 8901 2345, hannah.white@provider.edu, 950
