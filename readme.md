@@ -37,8 +37,12 @@ Card number format follows as listed in Account.txt. Passwords can be any string
 ```
 2. Follow the on-screen prompts to navigate through the ATM.
 
-## Contributing
-Feel free to fork the project and submit pull requests.
+## Contribution Guidelines
+To contribute:
+1. Fork the repository.
+2. Create a new branch for your feature/bug fix.
+3. Commit your changes with meaningful commit messages.
+4. Push to your fork and submit a pull request.
 
 ## Contact
-For any issues or suggestions, contact krishna.jhanwar2005@gmail.com
+For any issues or suggestions, contact me at krishnaj@iitbhilai.ac.in
